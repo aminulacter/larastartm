@@ -4,8 +4,8 @@ import {routes} from "./routes";
 Vue.use(VueRouter)
 
 export const router = new VueRouter({
-    routes,
-    mode: 'history',
-    linkExactActiveClass: 'active'
-});
+           routes,
+           mode: "history",
+           linkExactActiveClass: "linkActive"
+       });
 

@@ -7,7 +7,16 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import {Form, HasError, AlertError} from 'vform'
 import {router} from "./route";
+import VModal from "vue-js-modal";
+Vue.use(VModal);
+
+window.Form = Form;
+
+Vue.component(HasError.name, HasError)
+
+Vue.component(AlertError.name, AlertError);
 
 /**
  * The following block of code may be used to automatically register your
